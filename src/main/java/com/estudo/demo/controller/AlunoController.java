@@ -7,15 +7,21 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
 @RestController
 @RequestMapping("/api/alunos")
+@CrossOrigin(origins = "http://localhost:4200")
 public class AlunoController {
 
     @Autowired
     private AlunoRepository repository;
 
     @GetMapping
-    public List<Aluno> listarTodos() {
+    public List<Aluno> listar(@RequestParam(required = false) String nome) {
+        System.out.println("Pesquisando por: " + nome);
+        if (nome != null && !nome.isBlank()) {
+            return repository.findByNomeContainingIgnoreCase(nome);
+        }
         return repository.findAll();
     }
 

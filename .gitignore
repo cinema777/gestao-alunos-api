@@ -31,3 +31,21 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# --- Angular (Frontend) ---
+node_modules/
+.angular/
+/dist/
+npm-debug.log*
+
+# --- Java / Spring Boot (Backend) ---
+*.log
+.mvn/
+wrapper/
+
+# --- Docker & Ambiente ---
+.env
+/pgdata/
+
+# --- Ferramentas e Sistema ---
+Thumbs.db
