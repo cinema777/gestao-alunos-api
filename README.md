@@ -28,7 +28,7 @@ O projeto segue os padrões de mercado exigidos para desenvolvedores Fullstack e
 ### Passos
 1. **Clonar o repositório:**
    ```bash
-   git clone [https://github.com/cinema777/alunoAPI.git](https://github.com/seu-usuario/alunoAPI.git)
+   git clone [https://github.com/cinema777/gestao-alunos-api.git](https://github.com/cinema777/gestao-alunos-api.git)
    ```
 
 2. **Subir o ambiente (API + Banco de Dados)**
