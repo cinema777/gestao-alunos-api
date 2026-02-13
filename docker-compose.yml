@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: bdalunoteste
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1527081091
+    ports:
+      - "5432:5432"
+
+  api:
+    build: .
+    container_name: spring_api
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/bdalunoteste
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 1527081091
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
