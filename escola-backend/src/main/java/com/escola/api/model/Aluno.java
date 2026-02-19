@@ -1,4 +1,4 @@
-package com.estudo.demo.model;
+package com.escola.api.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

@@ -1,6 +1,6 @@
-package com.estudo.demo.repository;
+package com.escola.api.repository;
 
-import com.estudo.demo.model.Aluno;
+import com.escola.api.model.Aluno;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;

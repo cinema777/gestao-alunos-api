@@ -1,10 +1,23 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# --- Pastas de Build e Dependências (Essencial) ---
+**/target/
+**/node_modules/
+**/.angular/
+**/dist/
+**/build/
 
-### STS ###
+# --- Java / Maven ---
+.mvn/
+**/mvnw
+**/mvnw.cmd
+**/.mvn/wrapper/maven-wrapper.jar
+*.log
+
+# --- IDEs (VS Code, IntelliJ, STS) ---
+.vscode/
+.idea/
+*.iws
+*.iml
+*.ipr
 .apt_generated
 .classpath
 .factorypath
@@ -13,39 +26,10 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
-
-# --- Angular (Frontend) ---
-node_modules/
-.angular/
-/dist/
-npm-debug.log*
-
-# --- Java / Spring Boot (Backend) ---
-*.log
-.mvn/
-wrapper/
-
 # --- Docker & Ambiente ---
 .env
-/pgdata/
+**/pgdata/
 
-# --- Ferramentas e Sistema ---
+# --- Sistema ---
 Thumbs.db
+npm-debug.log*

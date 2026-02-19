@@ -1,7 +1,7 @@
-package com.estudo.demo.controller;
+package com.escola.api.controller;
 
-import com.estudo.demo.model.Aluno;
-import com.estudo.demo.repository.AlunoRepository;
+import com.escola.api.model.Aluno;
+import com.escola.api.repository.AlunoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

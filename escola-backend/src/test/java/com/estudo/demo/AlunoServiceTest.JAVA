@@ -1,7 +1,7 @@
-package com.estudo.demo;
+package com.escola.api.model;
 
-import com.estudo.demo.model.Aluno;
-import ccom.estudo.demo.repository.AlunoRepository;
+import com.escola.api.model.Aluno;
+import com.escola.api.repository.AlunoRepository;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
