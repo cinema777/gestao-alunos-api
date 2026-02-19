@@ -52,8 +52,8 @@ A API estará disponível em: http://localhost:8080/api/alunos
 Front end em: http://localhost:4200/
 
 3. Executar Testes Unitários
-Para validar a qualidade do código e garantir que as regras de negócio estão funcionando corretamente, utilize o Maven Wrapper:
+Para validar a qualidade do código e garantir que as regras de negócio estão funcionando corretamente, utilize o Maven:
 
 ```
-./mvnw test
+mvn test
 ```
